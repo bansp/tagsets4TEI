@@ -82,9 +82,9 @@
                <category xml:id="STTS.VVIZU"/>
                <category xml:id="STTS.VVPP"/>
                <category xml:id="STTS.XY"/>
-               <category xml:id="STTS.InternalPunctuation"/>  <!--$(-->
-               <category xml:id="STTS.Comma"/>    <!--$,-->
-               <category xml:id="STTS.FinalPunctuation"/>    <!--$.-->
+               <category xml:id="STTS.sttsInternalPunctuation"/>  <!--$(-->
+               <category xml:id="STTS.sttsComma"/>    <!--$,-->
+               <category xml:id="STTS.sttsFinalPunctuation"/>    <!--$.-->
             </taxonomy>
          </classDecl>
       </encodingDesc>
@@ -95,8 +95,20 @@
    </teiHeader>
    <text>
       <body>
-         <p>Some text here</p>
+         <head>Sample 01: tagsets in taxonomies</head>
+         <p>This document demonstrates setting up tagsets by using the mechanism of taxonomy declarations in the TEI header.</p>
+         <p>One immediate consequence that can be noticed is that feature values must receive
+            compound values, the first part of which acts as the namespace, hence "STTS" or "UD",
+            etc. as the prefix.</p>
+         <p>Another important consequence is that, since feature values are set up as IDs, they have
+            to obey XML restrictions on IDs, and in particular, they may not contain commas or
+            brackets -- compare the last symbols for punctuation in STTS, where I needed to use the
+            full names ("sttsInternalPunctuation" instead of "$("). Farewell short tags...</p>
+         <p>As far as the category level of tagset definition is concerned, it offers only limited
+            documentation options, basically via <gi>desc</gi> . <gi>catDesc</gi> is not allowed if
+            the <gi>equiv</gi> elements are to be used. Note by the way that adding <gi>catDesc</gi>
+            to the <ident type="class">att.datcat</ident> class, and then it could use the
+               <att>datcat</att> attribute (an issue debated for this class of elements back in 2012).</p>
       </body>
    </text>
-   <!--<xi:include href="fsdDecl.xml"/>-->
 </TEI>
