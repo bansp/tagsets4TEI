@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Grammatical tagsets defined in the TEI</title>
+            <title type="sub">Part I: taxonomies</title>
+            <editor xml:id="pb">Piotr Bański</editor>
+         </titleStmt>
+         <publicationStmt>
+            <p>Published at <ref target="https://github.com/bansp/tagsets4TEI">Piotr's GitHub
+                  repo</ref>, under the BSD-2 license (same as the Guidelines).</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>No source. Created from scratch.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy xml:id="STTS">
+               <desc>This is the version of the STTS tagset which used to be part of ISOCat (now dead) and transferred to <ref
+                  target="https://www.clarin.eu/content/clarin-concept-registry"
+                     >CLARIN Concept Registry</ref>. Square brackets in examples contain the context
+                  for exemplified parts of speech (note that this is slight tag abuse, we use 'q' for what should be a separate block.</desc>
+               <equiv uri="http://hdl.handle.net/11459/CCR__1c38a6d2-984d-f748-6a73-df26157e3b48"/>
+               <category xml:id="STTS.ADJA">
+                  <desc>
+                     <gloss xml:lang="de">attributives Adjektiv</gloss>
+                     <q> [das] große [Haus]</q>
+                  </desc>
+                  <equiv uri="http://hdl.handle.net/11459/CCR_C-2794_9148668e-8dd9-8678-e18a-36c1cdf346fe"/>
+               </category>
+               <category xml:id="STTS.ADJD"/>
+               <category xml:id="STTS.ADV" />
+               <category xml:id="STTS.APPO"/>
+               <category xml:id="STTS.APPR"/>
+               <category xml:id="STTS.APPRART"/>
+               <category xml:id="STTS.APZR"/>
+               <category xml:id="STTS.ART"/>
+               <category xml:id="STTS.ITJ"/>
+               <category xml:id="STTS.KOKOM"/>
+               <category xml:id="STTS.KON"/>
+               <category xml:id="STTS.KOUI"/>
+               <category xml:id="STTS.KOUS"/>
+               <category xml:id="STTS.NE"/>
+               <category xml:id="STTS.NN"/>
+               <category xml:id="STTS.PDAT"/>
+               <category xml:id="STTS.PDS"/>
+               <category xml:id="STTS.PIAT"/>
+               <category xml:id="STTS.PIDAT"/>
+               <category xml:id="STTS.PIS"/>
+               <category xml:id="STTS.PPER"/>
+               <category xml:id="STTS.PPOSAT"/>
+               <category xml:id="STTS.PPOSS"/>
+               <category xml:id="STTS.PRELAT"/>
+               <category xml:id="STTS.PRELS"/>
+               <category xml:id="STTS.PRF"/>
+               <category xml:id="STTS.PROP"/>
+               <category xml:id="STTS.PTKA"/>
+               <category xml:id="STTS.PTKANT"/>
+               <category xml:id="STTS.PTKNEG"/>
+               <category xml:id="STTS.PTKVZ"/>
+               <category xml:id="STTS.PTKZU"/>
+               <category xml:id="STTS.PWAT"/>
+               <category xml:id="STTS.PWAV"/>
+               <category xml:id="STTS.PWS"/>
+               <category xml:id="STTS.STTS"/>
+               <category xml:id="STTS.TRUNC"/>
+               <category xml:id="STTS.VAFIN"/>
+               <category xml:id="STTS.VAIMP"/>
+               <category xml:id="STTS.VAINF"/>
+               <category xml:id="STTS.VAPP"/>
+               <category xml:id="STTS.VMFIN"/>
+               <category xml:id="STTS.VMINF"/>
+               <category xml:id="STTS.VMPP"/>
+               <category xml:id="STTS.VVFIN"/>
+               <category xml:id="STTS.VVIMP"/>
+               <category xml:id="STTS.VVINF"/>
+               <category xml:id="STTS.VVIZU"/>
+               <category xml:id="STTS.VVPP"/>
+               <category xml:id="STTS.XY"/>
+               <category xml:id="STTS.InternalPunctuation"/>  <!--$(-->
+               <category xml:id="STTS.Comma"/>    <!--$,-->
+               <category xml:id="STTS.FinalPunctuation"/>    <!--$.-->
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#pb" when="2022-09-21">Setup the repository, created this document as the
+            first sample using taxonomies, with STTS as the content.</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>Some text here</p>
+      </body>
+   </text>
+   <!--<xi:include href="fsdDecl.xml"/>-->
+</TEI>
