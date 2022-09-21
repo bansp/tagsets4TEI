@@ -12,7 +12,8 @@
          </titleStmt>
          <publicationStmt>
             <p>Published at <ref target="https://github.com/bansp/tagsets4TEI">Piotr's GitHub
-                  repo</ref>, under the BSD-2 license (same as the Guidelines).</p>
+                  repo</ref>, under the BSD-2 license (same as the Guidelines). Cited parts may be
+               distributed under different licenses, as specified.</p>
          </publicationStmt>
          <sourceDesc>
             <p>No source. Created from scratch.</p>
@@ -21,15 +22,17 @@
       <encodingDesc>
          <classDecl>
             <taxonomy xml:id="STTS">
-               <desc>This is the version of the STTS tagset which used to be part of ISOCat (now dead) and transferred to <ref
-                  target="https://www.clarin.eu/content/clarin-concept-registry"
-                     >CLARIN Concept Registry</ref>. Square brackets in examples contain the context
-                  for exemplified parts of speech (note that this is slight tag abuse, we use 'q' for what should be a separate block.</desc>
+               <desc>This is the version of the STTS tagset which used to be part of ISOCat (now
+                  dead) and transferred to <ref
+                     target="https://www.clarin.eu/content/clarin-concept-registry">CLARIN Concept
+                     Registry</ref>. Square brackets in examples contain the context for exemplified
+                  parts of speech (note that this is slight tag abuse, we use 'quote' for what should be
+                  a separate block). The tagset is distributed under CC BY.</desc>
                <equiv uri="http://hdl.handle.net/11459/CCR__1c38a6d2-984d-f748-6a73-df26157e3b48"/>
                <category xml:id="STTS.ADJA">
                   <desc>
                      <gloss xml:lang="de">attributives Adjektiv</gloss>
-                     <q> [das] große [Haus]</q>
+                     <quote>	[das] große [Haus]</quote>
                   </desc>
                   <equiv uri="http://hdl.handle.net/11459/CCR_C-2794_9148668e-8dd9-8678-e18a-36c1cdf346fe"/>
                </category>
@@ -67,7 +70,10 @@
                <category xml:id="STTS.PWAT"/>
                <category xml:id="STTS.PWAV"/>
                <category xml:id="STTS.PWS"/>
-               <category xml:id="STTS.STTS"/>
+               <category xml:id="STTS.STTS">
+                  <desc>Stuttgart Tübingen Tag Set (source: <ref target="http://www.sfs.uni-tuebingen.de/Elwis/stts/stts.html">http://www.sfs.uni-tuebingen.de/Elwis/stts/stts.html</ref>)</desc>
+                  <equiv uri="http://hdl.handle.net/11459/CCR_C-2446_6ea0abff-feef-66b7-4fc5-006623b116ee"/>
+               </category>
                <category xml:id="STTS.TRUNC"/>
                <category xml:id="STTS.VAFIN"/>
                <category xml:id="STTS.VAIMP"/>
@@ -82,13 +88,93 @@
                <category xml:id="STTS.VVIZU"/>
                <category xml:id="STTS.VVPP"/>
                <category xml:id="STTS.XY"/>
-               <category xml:id="STTS.sttsInternalPunctuation"/>  <!--$(-->
-               <category xml:id="STTS.sttsComma"/>    <!--$,-->
-               <category xml:id="STTS.sttsFinalPunctuation"/>    <!--$.-->
+               <category xml:id="STTS.sttsInternalPunctuation">  <!--$(-->
+                  <desc>
+                     <desc>STTS tag for other sentence internal punctuation</desc>
+                     <quote>	- [ ] ( ) "</quote>
+                  </desc>
+                  <equiv uri="http://hdl.handle.net/11459/CCR_C-3036_3fa0eb91-6eb4-fa7d-8f44-203514ee6ff9"/>
+               </category>
+               <category xml:id="STTS.sttsComma">    <!--$,-->
+                  <desc>
+                     <desc>STTS tag for comma</desc>
+                     <quote>	,</quote>
+                  </desc>
+                  <equiv uri="http://hdl.handle.net/11459/CCR_C-3034_5a89fbd7-9b6c-8736-1016-c08a232bc945"/>
+               </category>
+               <category xml:id="STTS.sttsFinalPunctuation">    <!--$.-->
+                  <desc>
+                     <desc>STTS tag for sentence-final punctuation</desc>
+                     <quote>	. ? ! ; :</quote>
+                  </desc>
+                  <equiv uri="http://hdl.handle.net/11459/CCR_C-3035_36b253bf-da4c-2b0f-930a-3299b61c974a"/>
+               </category>
+            </taxonomy>
+            <taxonomy xml:id="UD">
+               <desc>This is the set of universal parts of speech (UPOS) defined by Universal
+                  Dependencies. Links to UD resources are treated as if they were PIDs (this is bad
+                  practice).</desc>
+               <equiv uri="https://universaldependencies.org/u/pos/index.html"/>
+               <category xml:id="UD.ADJ">
+                  <gloss>adjective</gloss>
+                  <equiv uri="https://universaldependencies.org/u/pos/ADJ.html"/>
+               </category>
+               <category xml:id="UD.ADP">
+                  <gloss>adposition</gloss>
+               </category>
+               <category xml:id="UD.ADV">
+                  <gloss>adverb</gloss>
+               </category>
+               <category xml:id="UD.AUX">
+                  <gloss>auxiliary</gloss>
+               </category>
+               <category xml:id="UD.CCONJ">
+                  <gloss>coordinating conjunction</gloss>
+               </category>
+               <category xml:id="UD.DET">
+                  <gloss>determiner</gloss>
+               </category>
+               <category xml:id="UD.INTJ">
+                  <gloss>interjection</gloss>
+               </category>
+               <category xml:id="UD.NOUN">
+                  <gloss>noun</gloss>
+               </category>
+               <category xml:id="UD.NUM">
+                  <gloss>numeral</gloss>
+               </category>
+               <category xml:id="UD.PART">
+                  <gloss>particle</gloss>
+               </category>
+               <category xml:id="UD.PRON">
+                  <gloss>pronoun</gloss>
+               </category>
+               <category xml:id="UD.PROPN">
+                  <gloss>proper noun</gloss>
+               </category>
+               <category xml:id="UD.PUNCT">
+                  <gloss>punctuation</gloss>
+               </category>
+               <category xml:id="UD.SCONJ">
+                  <gloss>subordinating conjunction</gloss>
+               </category>
+               <category xml:id="UD.SYM">
+                  <gloss>symbol</gloss>
+               </category>
+               <category xml:id="UD.VERB">
+                  <gloss>verb</gloss>
+               </category>
+               <category xml:id="UD.X">
+                  <gloss>other</gloss>
+               </category>
             </taxonomy>
          </classDecl>
       </encodingDesc>
       <revisionDesc>
+         <change who="#pb" when="2022-09-22">Expanded some STTS entries, added a taxonomy for UD
+            because it's important to have more than one to see how they interact or clash. Not
+            every <gi>equiv</gi> added because all that is needed at this point is proof of
+            concept.</change>
          <change who="#pb" when="2022-09-21">Setup the repository, created this document as the
             first sample using taxonomies, with STTS as the content.</change>
       </revisionDesc>
