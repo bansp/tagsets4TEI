@@ -7,7 +7,7 @@
       <fileDesc>
          <titleStmt>
             <title type="main">Grammatical tagsets defined in the TEI</title>
-            <title type="sub">Part I: taxonomies</title>
+            <title type="sub">Part II: features</title>
             <editor xml:id="pb">Piotr Bański</editor>
          </titleStmt>
          <publicationStmt>
@@ -20,96 +20,93 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <classDecl>
-            <taxonomy xml:id="STTS">
-               <desc>This is the version of the STTS tagset which used to be part of ISOCat (now
-                  dead) and transferred to <ref
-                     target="https://www.clarin.eu/content/clarin-concept-registry">CLARIN Concept
-                     Registry</ref>. Square brackets in examples contain the context for exemplified
-                  parts of speech (note that this is slight tag abuse, we use 'quote' for what should be
-                  a separate block). The tagset is distributed under CC BY.</desc>
-               <equiv uri="http://hdl.handle.net/11459/CCR__1c38a6d2-984d-f748-6a73-df26157e3b48"/>
-               <category xml:id="STTS.ADJA">
-                  <desc>
+         <fsdDecl>
+            <fvLib xml:id="STTS"> <!--data category selection-->
+               <symbol value="ADJA" datcat="http://hdl.handle.net/11459/CCR_C-2794_9148668e-8dd9-8678-e18a-36c1cdf346fe"/>
+                  <!--<desc>
                      <gloss xml:lang="de">attributives Adjektiv</gloss>
                      <quote>	[das] große [Haus]</quote>
                   </desc>
-                  <equiv uri="http://hdl.handle.net/11459/CCR_C-2794_9148668e-8dd9-8678-e18a-36c1cdf346fe"/>
-               </category>
-               <category xml:id="STTS.ADJD"/>
-               <category xml:id="STTS.ADV" />
-               <category xml:id="STTS.APPO"/>
-               <category xml:id="STTS.APPR"/>
-               <category xml:id="STTS.APPRART"/>
-               <category xml:id="STTS.APZR"/>
-               <category xml:id="STTS.ART"/>
-               <category xml:id="STTS.ITJ"/>
-               <category xml:id="STTS.KOKOM"/>
-               <category xml:id="STTS.KON"/>
-               <category xml:id="STTS.KOUI"/>
-               <category xml:id="STTS.KOUS"/>
-               <category xml:id="STTS.NE"/>
-               <category xml:id="STTS.NN"/>
-               <category xml:id="STTS.PDAT"/>
-               <category xml:id="STTS.PDS"/>
-               <category xml:id="STTS.PIAT"/>
-               <category xml:id="STTS.PIDAT"/>
-               <category xml:id="STTS.PIS"/>
-               <category xml:id="STTS.PPER"/>
-               <category xml:id="STTS.PPOSAT"/>
-               <category xml:id="STTS.PPOSS"/>
-               <category xml:id="STTS.PRELAT"/>
-               <category xml:id="STTS.PRELS"/>
-               <category xml:id="STTS.PRF"/>
-               <category xml:id="STTS.PROP"/>
-               <category xml:id="STTS.PTKA"/>
-               <category xml:id="STTS.PTKANT"/>
-               <category xml:id="STTS.PTKNEG"/>
-               <category xml:id="STTS.PTKVZ"/>
-               <category xml:id="STTS.PTKZU"/>
-               <category xml:id="STTS.PWAT"/>
-               <category xml:id="STTS.PWAV"/>
-               <category xml:id="STTS.PWS"/>
-               <category xml:id="STTS.STTS">
-                  <desc>Stuttgart Tübingen Tag Set (source: <ref target="http://www.sfs.uni-tuebingen.de/Elwis/stts/stts.html">http://www.sfs.uni-tuebingen.de/Elwis/stts/stts.html</ref>)</desc>
-                  <equiv uri="http://hdl.handle.net/11459/CCR_C-2446_6ea0abff-feef-66b7-4fc5-006623b116ee"/>
-               </category>
-               <category xml:id="STTS.TRUNC"/>
-               <category xml:id="STTS.VAFIN"/>
-               <category xml:id="STTS.VAIMP"/>
-               <category xml:id="STTS.VAINF"/>
-               <category xml:id="STTS.VAPP"/>
-               <category xml:id="STTS.VMFIN"/>
-               <category xml:id="STTS.VMINF"/>
-               <category xml:id="STTS.VMPP"/>
-               <category xml:id="STTS.VVFIN"/>
-               <category xml:id="STTS.VVIMP"/>
-               <category xml:id="STTS.VVINF"/>
-               <category xml:id="STTS.VVIZU"/>
-               <category xml:id="STTS.VVPP"/>
-               <category xml:id="STTS.XY"/>
-               <category xml:id="STTS.sttsInternalPunctuation">  <!--$(-->
+                  
+                  Q: where do we place the documentation?
+                  A: at the end of he handle, it seems; but do we not want a bit of that locally, for the encoder?
+                  -->
+               <symbol value="ADJD"/>
+               <symbol value="ADV" />
+               <symbol value="APPO"/>
+               <symbol value="APPR"/>
+               <symbol value="APPRART"/>
+               <symbol value="APZR"/>
+               <symbol value="ART"/>
+               <symbol value="ITJ"/>
+               <symbol value="KOKOM"/>
+               <symbol value="KON"/>
+               <symbol value="KOUI"/>
+               <symbol value="KOUS"/>
+               <symbol value="NE"/>
+               <symbol value="NN"/>
+               <symbol value="PDAT"/>
+               <symbol value="PDS"/>
+               <symbol value="PIAT"/>
+               <symbol value="PIDAT"/>
+               <symbol value="PIS"/>
+               <symbol value="PPER"/>
+               <symbol value="PPOSAT"/>
+               <symbol value="PPOSS"/>
+               <symbol value="PRELAT"/>
+               <symbol value="PRELS"/>
+               <symbol value="PRF"/>
+               <symbol value="PROP"/>
+               <symbol value="PTKA"/>
+               <symbol value="PTKANT"/>
+               <symbol value="PTKNEG"/>
+               <symbol value="PTKVZ"/>
+               <symbol value="PTKZU"/>
+               <symbol value="PWAT"/>
+               <symbol value="PWAV"/>
+               <symbol value="PWS"/>
+               <symbol value="STTS" datcat="http://hdl.handle.net/11459/CCR_C-2446_6ea0abff-feef-66b7-4fc5-006623b116ee"/>
+                  <!--<desc>Stuttgart Tübingen Tag Set (source: <ref target="http://www.sfs.uni-tuebingen.de/Elwis/stts/html">http://www.sfs.uni-tuebingen.de/Elwis/stts/html</ref>)</desc>-->
+               <symbol value="TRUNC"/>
+               <symbol value="VAFIN"/>
+               <symbol value="VAIMP"/>
+               <symbol value="VAINF"/>
+               <symbol value="VAPP"/>
+               <symbol value="VMFIN"/>
+               <symbol value="VMINF"/>
+               <symbol value="VMPP"/>
+               <symbol value="VVFIN"/>
+               <symbol value="VVIMP"/>
+               <symbol value="VVINF"/>
+               <symbol value="VVIZU"/>
+               <symbol value="VVPP"/>
+               <symbol value="XY"/>
+               <symbol value="$(" datcat="http://hdl.handle.net/11459/CCR_C-3036_3fa0eb91-6eb4-fa7d-8f44-203514ee6ff9"/>
+                 <!--                 
                   <desc>
                      <desc>STTS tag for other sentence internal punctuation</desc>
                      <quote>	- [ ] ( ) "</quote>
                   </desc>
-                  <equiv uri="http://hdl.handle.net/11459/CCR_C-3036_3fa0eb91-6eb4-fa7d-8f44-203514ee6ff9"/>
-               </category>
-               <category xml:id="STTS.sttsComma">    <!--$,-->
-                  <desc>
+                 -->
+               <symbol value="$," datcat="http://hdl.handle.net/11459/CCR_C-3034_5a89fbd7-9b6c-8736-1016-c08a232bc945"/>
+                  <!--
+                     <desc>
                      <desc>STTS tag for comma</desc>
                      <quote>	,</quote>
                   </desc>
-                  <equiv uri="http://hdl.handle.net/11459/CCR_C-3034_5a89fbd7-9b6c-8736-1016-c08a232bc945"/>
-               </category>
-               <category xml:id="STTS.sttsFinalPunctuation">    <!--$.-->
-                  <desc>
+                  -->
+               <symbol value="$." datcat="http://hdl.handle.net/11459/CCR_C-3035_36b253bf-da4c-2b0f-930a-3299b61c974a"/>    <!---->
+                  <!--
+                     <desc>
                      <desc>STTS tag for sentence-final punctuation</desc>
                      <quote>	. ? ! ; :</quote>
                   </desc>
-                  <equiv uri="http://hdl.handle.net/11459/CCR_C-3035_36b253bf-da4c-2b0f-930a-3299b61c974a"/>
-               </category>
-            </taxonomy>
+                  -->
+            </fvLib>
+            <fvLib></fvLib>
+         </fsdDecl>
+         <classDecl>
+            
             <taxonomy xml:id="UD">
                <desc>This is the set of universal parts of speech (UPOS) defined by Universal
                   Dependencies. Links to UD resources are treated as if they were PIDs (this is bad
@@ -171,12 +168,8 @@
          </classDecl>
       </encodingDesc>
       <revisionDesc>
-         <change who="#pb" when="2022-09-22">Expanded some STTS entries, added a taxonomy for UD
-            because it's important to have more than one to see how they interact or clash. Not
-            every <gi>equiv</gi> added because all that is needed at this point is proof of
-            concept.</change>
-         <change who="#pb" when="2022-09-21">Setup the repository, created this document as the
-            first sample using taxonomies, with STTS as the content.</change>
+         <change who="#pb" when="2022-09-23">Created this document as the
+            second sample, using feature libraries, by copying and modifying the taxonomies sample.</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -202,20 +195,23 @@
          </div>
          <div>
             <head>Examples of inline annotation</head>
-            <p>
-               <s corresp="https://jenkins-paderborn.tei-c.org/view/LingSIG/job/TEIP5-LingSIG-deadISOCat/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/AI.html#index-egXML-d54e130084">
-                  <w pos="PPER" lemma="wir"
-                     msd="pers:subst:p1:nom:pl">Wir</w>
-                  <w pos="VVFIN" lemma="fahren"
-                     msd="p1:pl:pres:ind">fahren</w>
-                  <w pos="APPR" lemma="in" msd="--">in</w>
-                  <w pos="ART" lemma="d"
-                     msd="def:acc:sg:masc">den</w>
-                  <w pos="NN" lemma="Urlaub"
-                     msd="acc:sg:masc">Urlaub</w>
-                  <pc pos="$." lemma="." msd="--" join="left">.</pc>
-               </s>
-            </p>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+               <p>
+                  <s corresp="https://jenkins-paderborn.tei-c.org/view/LingSIG/job/TEIP5-LingSIG-deadISOCat/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/AI.html#index-egXML-d54e130084">
+                     <w pos="PPER" lemma="wir"
+                        msd="pers:subst:p1:nom:pl">Wir</w>
+                     <w pos="VVFIN" lemma="fahren"
+                        msd="p1:pl:pres:ind">fahren</w>
+                     <w pos="APPR" lemma="in" msd="--">in</w>
+                     <w pos="ART" lemma="d"
+                        msd="def:acc:sg:masc">den</w>
+                     <w pos="NN" lemma="Urlaub"
+                        msd="acc:sg:masc">Urlaub</w>
+                     <pc pos="$." lemma="." msd="--" join="left">.</pc>
+                  </s>
+               </p>
+            </egXML>
+            
          </div>
       </body>
    </text>
